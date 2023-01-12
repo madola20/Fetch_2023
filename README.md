@@ -19,11 +19,17 @@ http://127.0.0.1:5000/receipts/process
 This will read JSON from http://127.0.0.1:5000/json_test and return a JSON key value pair. 
     NOTE: 
     The file from app.py can be edited to process different receipts, starting at line 23. Replace the JSON in the parenthesis and rebuild the docker container. 
+    
     Another method would be to edit line 144: 
+    
     request = requests.get(baseurl + "json_test").json()
+    
     to
+    
     request = requests.get("{x}").json()
+    
     where {x} is the URL of the receipt resource
+    
     The docker container will need to be rebuilt in this case as well.
 
 Finally, copy the address below into your web browser and replace the text "{x}" with the id value returned from the above route to determine the points awarded. 
