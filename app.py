@@ -140,7 +140,7 @@ def process_receipts():
     global identified_receipts
     global detailed_receipts
 
-    baseurl = "http://127.0.0.1:8888/"
+    baseurl = "http://127.0.0.1:5000/"
     request = requests.get(baseurl + "json_test").json()
 
     print(type(request))
@@ -208,4 +208,4 @@ def serial_maker():
 
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8888, debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)
