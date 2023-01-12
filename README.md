@@ -1,7 +1,10 @@
 # Fetch_2023
 receipt_processor
+
 Donna Madeline Laurance
+
 Code Excercise for Backend Engineering Apprenticeship 
+
 
 This application requires Docker to run and a web browser to interact with.
 
