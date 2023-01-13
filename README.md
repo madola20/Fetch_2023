@@ -25,7 +25,7 @@ The port and forwarded port must be specified, otherwise the webservice will onl
 
 Running docker will start the application. You will then need to open a web browser and enter in the following address: 
 
-    http://127.0.0.1:5000/receipts/process
+http://127.0.0.1:5000/receipts/process
 
 This will read JSON from http://127.0.0.1:5000/json_test and return a JSON key value pair. 
 
