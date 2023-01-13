@@ -11,10 +11,10 @@ This application requires Docker to run and a web browser to interact with.
 
 First, pull the repository from github to your local machine and make Fetch_23 your current directory. 
 Then, build the the container by using the following command: 
-docker build . -t python-flask:latest
+    docker build . -t python-flask:latest
 
 Next, run the docker container with the following command: 
-docker run -p 5000:5000 python-flask:latest
+    docker run -p 5000:5000 python-flask:latest
 
 The port and forwarded port must be specified, otherwise the webservice will only be available from within the docker container.
 
@@ -24,7 +24,7 @@ http://127.0.0.1:5000/receipts/process
 This will read JSON from http://127.0.0.1:5000/json_test and return a JSON key value pair. 
 
     NOTE: 
-    The file from app.py can be edited to process different receipts, starting at line 23. Replace the JSON in the parenthesis and rebuild the docker container. 
+    The file app.py can be edited to process different receipts, starting at line 23. Replace the JSON in the parenthesis and rebuild the docker container. 
     
     Another method would be to edit line 144: 
     
