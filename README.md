@@ -46,7 +46,7 @@ This will read JSON from http://127.0.0.1:5000/json_test and return a JSON key v
 
 Finally, copy the address below into your web browser and replace the text "{x}" with the id value returned from the above route to determine the points awarded. 
 
-    http://127.0.0.1:5000/{x}/points
+    http://127.0.0.1:5000/receipts/{x}/points
 
 For example:
 
